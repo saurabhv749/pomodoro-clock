@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  text-align: center;
+  background-color: #0984e3;
+  font-family: "Share Tech Mono", monospace;
+  color: #fff;
+}
+
+#root {
+  width: 100%;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+button {
+  font-size: 2rem;
+  width: 45px;
+  color: #34495e;
+  margin: 10px;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.box {
+  max-width: 650px;
+  height: 100%;
+  /* min-height: 100vh; */
+  margin: 0 auto;
+  border-radius: 2rem;
+}
+#main-container {
+  margin-top: 4rem;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+@media screen and (min-width: 650px) {
+  #main-container {
+    flex-direction: row;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+.control-box .controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#timer {
+  border-radius: 20px;
+  margin: 2rem auto;
+  max-width: 350px;
+  height: 250px;
+  box-shadow: -8px 8px 0 0 #2c3e50;
+  background: #3498db;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#break-length,
+#session-length {
+  display: inline-block;
+  font-size: 2rem;
+  color: #fff;
+}
